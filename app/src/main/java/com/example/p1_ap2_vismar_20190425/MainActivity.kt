@@ -46,12 +46,12 @@ fun MyApp() {
 
         val navHostController = rememberNavController( )
 
-        NavHost(navController = navHostController, startDestination = "Registro") {
+        NavHost(navController = navHostController, startDestination = "NavegarRegistro") {
 
             composable(route = "NavegarConsulta"){
-                Consulta()
+                Consulta(navHostController)
             }
-            composable(route = "Registro"){
+            composable(route = "NavegarRegistro"){
                 Registro(navHostController)
             }
         }
