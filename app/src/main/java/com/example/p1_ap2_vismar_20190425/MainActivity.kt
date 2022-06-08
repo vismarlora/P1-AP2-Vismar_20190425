@@ -13,7 +13,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.p1_ap2_vismar_20190425.ui.theme.P1AP2Vismar_20190425Theme
 import com.example.p1_ap2_vismar_20190425.ui.theme.prestamo.Consulta
-import com.example.p1_ap2_vismar_20190425.ui.theme.prestamo.Registro
+import com.example.p1_ap2_vismar_20190425.ui.theme.prestamo.RegistroPrestamo
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -47,7 +47,7 @@ fun MyApp() {
                 Consulta(navHostController)
             }
             composable(route = "NavegarRegistro"){
-                Registro(navHostController)
+                RegistroPrestamo(navHostController)
             }
         }
     }
