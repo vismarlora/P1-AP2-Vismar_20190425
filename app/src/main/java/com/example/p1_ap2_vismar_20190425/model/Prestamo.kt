@@ -8,6 +8,6 @@ data class Prestamo(
     @PrimaryKey(autoGenerate = true)
     val prestamoId: Int = 0,
     val deudor: String,
-    val Concepto: String,
+    val concepto: String,
     val monto: Float
 )
