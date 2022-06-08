@@ -5,22 +5,15 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.p1_ap2_vismar_20190425.ui.theme.P1AP2Vismar_20190425Theme
-import com.example.p1_ap2_vismar_20190425.ui.theme.entidades.Consulta
-import com.example.p1_ap2_vismar_20190425.ui.theme.entidades.Registro
+import com.example.p1_ap2_vismar_20190425.ui.theme.prestamo.Consulta
+import com.example.p1_ap2_vismar_20190425.ui.theme.prestamo.Registro
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

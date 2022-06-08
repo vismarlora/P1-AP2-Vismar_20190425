@@ -1,4 +1,4 @@
-package com.example.p1_ap2_vismar_20190425.ui.theme.entidades
+package com.example.p1_ap2_vismar_20190425.ui.theme.prestamo
 
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons

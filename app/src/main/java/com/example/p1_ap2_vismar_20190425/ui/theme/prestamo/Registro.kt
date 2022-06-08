@@ -1,4 +1,4 @@
-package com.example.p1_ap2_vismar_20190425.ui.theme.entidades
+package com.example.p1_ap2_vismar_20190425.ui.theme.prestamo
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
