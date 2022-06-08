@@ -3,13 +3,18 @@ package com.example.p1_ap2_vismar_20190425
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.foundation.layout.*
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.p1_ap2_vismar_20190425.ui.theme.P1AP2Vismar_20190425Theme
 
 class MainActivity : ComponentActivity() {
@@ -18,26 +23,28 @@ class MainActivity : ComponentActivity() {
         setContent {
             P1AP2Vismar_20190425Theme {
                 // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    Greeting("Android")
-                }
+
+                MyApp()
             }
         }
     }
 }
 
+@Preview(showBackground = true)
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+fun MyApp() {
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = MaterialTheme.colors.background
+    ) {
+        //Navegacion
+    }
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     P1AP2Vismar_20190425Theme {
-        Greeting("Android")
+        MyApp()
     }
 }
