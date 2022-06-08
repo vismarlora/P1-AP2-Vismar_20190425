@@ -16,7 +16,9 @@ fun Registro(navHostController: NavHostController) {
             TopAppBar(title = { Text(text = "Prestamo") })
         },
     ){
+
         Column(Modifier.padding(16.dp)) {
+
             OutlinedButton(onClick = { navHostController.navigate("NavegarConsulta") }) {
                 Text(text = "Guardar")
             }
