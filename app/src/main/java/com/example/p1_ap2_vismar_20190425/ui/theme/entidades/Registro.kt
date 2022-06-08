@@ -17,6 +17,7 @@ fun Registro(navHostController: NavHostController) {
         },
     ){
 
+
         Column(Modifier.padding(16.dp)) {
 
             OutlinedButton(onClick = { navHostController.navigate("NavegarConsulta") }) {

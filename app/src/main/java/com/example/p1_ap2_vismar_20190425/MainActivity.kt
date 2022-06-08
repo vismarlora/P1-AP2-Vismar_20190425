@@ -21,7 +21,9 @@ import androidx.navigation.compose.rememberNavController
 import com.example.p1_ap2_vismar_20190425.ui.theme.P1AP2Vismar_20190425Theme
 import com.example.p1_ap2_vismar_20190425.ui.theme.entidades.Consulta
 import com.example.p1_ap2_vismar_20190425.ui.theme.entidades.Registro
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
