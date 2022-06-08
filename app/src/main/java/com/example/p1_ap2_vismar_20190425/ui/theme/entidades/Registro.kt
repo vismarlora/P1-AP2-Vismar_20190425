@@ -7,12 +7,13 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 
 @Composable
-fun Registro() {
+fun Registro(navHostController: NavHostController) {
 
     Column(Modifier.padding(16.dp)) {
-        OutlinedButton(onClick = { /*TODO */ }) {
+        OutlinedButton(onClick = { navHostController.navigate("NavegarConsulta") }) {
             Text(text = "Guardar")
         }
     }

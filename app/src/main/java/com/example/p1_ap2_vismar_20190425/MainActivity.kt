@@ -15,7 +15,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.example.p1_ap2_vismar_20190425.ui.theme.P1AP2Vismar_20190425Theme
+import com.example.p1_ap2_vismar_20190425.ui.theme.entidades.Consulta
+import com.example.p1_ap2_vismar_20190425.ui.theme.entidades.Registro
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +43,18 @@ fun MyApp() {
         color = MaterialTheme.colors.background
     ) {
         //Navegacion
+
+        val navHostController = rememberNavController( )
+
+        NavHost(navController = navHostController, startDestination = "Registro") {
+
+            composable(route = "NavegarConsulta"){
+                Consulta()
+            }
+            composable(route = "Registro"){
+                Registro(navHostController)
+            }
+        }
     }
 }
 
