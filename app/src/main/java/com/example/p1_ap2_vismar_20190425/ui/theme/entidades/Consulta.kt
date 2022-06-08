@@ -15,7 +15,6 @@ fun Consulta(navHostController: NavHostController) {
         floatingActionButton = {
             FloatingActionButton(onClick = { navHostController.navigate("NavegarRegistro") }) {
                 Icon(imageVector = Icons.Default.Add, contentDescription = null)
-
             }
         },
     ){
