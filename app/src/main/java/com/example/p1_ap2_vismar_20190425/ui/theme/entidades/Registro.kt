@@ -13,7 +13,7 @@ fun Registro(navHostController: NavHostController) {
 
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text(text = "Registro") })
+            TopAppBar(title = { Text(text = "Prestamo") })
         },
     ){
         Column(Modifier.padding(16.dp)) {

@@ -18,6 +18,5 @@ fun Consulta(navHostController: NavHostController) {
             }
         },
     ){
-
     }
 }
