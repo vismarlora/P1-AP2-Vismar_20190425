@@ -12,13 +12,15 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-
 class PrestamoViewModel @Inject constructor(
     val prestamoRepository: PrestamoRepository
 ): ViewModel() {
     var deudor by mutableStateOf("")
     var concepto by mutableStateOf("")
     var monto by mutableStateOf(0.00f)
+
+    var listado = prestamoRepository.getList()
+    private set
 
     fun Guardar(){
         viewModelScope.launch {

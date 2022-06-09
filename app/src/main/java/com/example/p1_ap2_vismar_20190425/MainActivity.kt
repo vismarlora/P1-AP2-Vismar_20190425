@@ -41,7 +41,7 @@ fun MyApp() {
 
         val navHostController = rememberNavController( )
 
-        NavHost(navController = navHostController, startDestination = "NavegarRegistro") {
+        NavHost(navController = navHostController, startDestination = "NavegarConsulta") {
 
             composable(route = "NavegarConsulta"){
                 Consulta(navHostController)

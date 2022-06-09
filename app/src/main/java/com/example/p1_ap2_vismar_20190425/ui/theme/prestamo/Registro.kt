@@ -5,10 +5,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.NotAccessible
-import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.ShoppingCart
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.*
@@ -26,9 +23,7 @@ fun RegistroPrestamo(
 ) {
 
     val scaffoldState = rememberScaffoldState()
-    var deudor by rememberSaveable() {
-        mutableStateOf("")
-    }
+
 
     Scaffold(
         topBar = {
@@ -40,11 +35,12 @@ fun RegistroPrestamo(
                   viewModel.Guardar()  
                 }
             ) {
-                Icon(imageVector = Icons.Default.Add, contentDescription = null)
+                Icon(imageVector = Icons.Default.Save, contentDescription = null)
             }
-        }
+        },
+        scaffoldState = scaffoldState
     ){
-        Column(Modifier.padding(16.dp)) {
+        Column(Modifier.padding(it).padding(16.dp)) {
 
             OutlinedTextField(
                 value = viewModel.deudor,
@@ -74,8 +70,6 @@ fun RegistroPrestamo(
                     Icon(imageVector = Icons.Default.ShoppingCart, contentDescription = null)
                 }
             )
-
-
         }
     }
 }
