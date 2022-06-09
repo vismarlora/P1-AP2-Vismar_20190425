@@ -41,10 +41,6 @@ fun Consulta(
                 }
             }
         }
-
-
-
-
     }
 }
 
@@ -52,7 +48,7 @@ fun Consulta(
 fun RowP(prest: Prestamo) {
     Column(modifier = Modifier.padding(8.dp)) {
         Text(text = "Deudor: ${prest.deudor}")
-        Text(text = "Concepto: ${prest.concepto}")
+        Text(text = "Concepto: ${prest.deudor}")
         Text(text = "Monto: ${prest.monto}")
 
     }

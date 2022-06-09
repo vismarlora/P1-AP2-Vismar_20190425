@@ -31,7 +31,7 @@ fun RegistroPrestamo(
         },
         floatingActionButton = {
             FloatingActionButton(
-                onClick = {
+                onClick = { navHostController.navigate("NavegarConsulta")
                   viewModel.Guardar()  
                 }
             ) {
